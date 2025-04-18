@@ -1,0 +1,276 @@
+:root{
+    --btn-color1: hsl(171, 66%, 44%);
+    --btn-color2: hsl(233, 100%, 69%);
+    --btn1-border-btm-color: hsl(171, 63%, 46%);
+    --btn2-border-btm-color: hsl(233, 79%, 63%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Bai Jamjuree';
+    color: hsl(201, 11%, 66%);
+}
+
+button{
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 14px 34px;
+    border-width: 0 0 2px 0;
+    color: white;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 7em;
+
+}
+
+footer > div:first-child img{
+    width: 50px;
+}
+
+footer div:last-child{
+    display: flex;
+    gap: 1.4rem;
+}
+
+footer img{
+    object-fit: contain;
+}
+
+footer div:last-child img{
+    width: 25px;
+}
+
+header, section, footer{
+    padding: 2em;
+}
+
+header, .sct2, .sct3, .sct5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .text-centered{
+    max-width: 48%;
+    text-align: center;
+}
+
+header img{
+    width: 6rem;
+    margin-bottom: 3.5rem;
+    margin-top: 5rem;
+}
+
+h2{
+    font-size: 2.1rem;
+}
+
+h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+li{
+    margin-bottom: 0.7rem;
+}
+
+main{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+p{
+    margin-top: 1.3rem;
+    margin-bottom: 2.2rem;
+}
+
+ul{
+    color: hsl(210, 10%, 33%);
+    column-count: 3;
+    column-gap: 3rem;
+    list-style-type: none;
+}
+
+
+.btn1{
+    background-color: var(--btn-color1);
+    border-color: var(--btn1-border-btm-color);
+}
+
+.btn2{
+    background-color: var(--btn-color2);
+    border-color: var(--btn2-border-btm-color);
+}
+
+.btn-cnt{
+    display: flex;
+    gap: 1rem;
+}
+
+.sct1{
+    padding: 45px 0 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.sct1-img-cnt{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sct1-img-cnt img{
+    width: 50%;
+}
+
+.sct1-img-cnt-text{
+    width: 25rem;
+}
+
+.sct1 .text-centered{
+    margin: auto;
+}
+
+.sct2 img{
+    width: 70%;
+}
+
+.sct3{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sct3-cnt1{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sct3-cnt1 div{
+    flex: 1;
+}
+
+.sct3-cnt1 div:not(.sct3-cnt1 div:last-child){
+    margin-right: 1rem;
+}
+
+
+.sct3-cnt1 img{
+    margin-bottom: 1.2rem;
+}
+
+.sct4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.sct4 img{
+    max-inline-size: 20%;
+}
+
+.text-centered{
+    max-width: 50%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    body, main{
+        gap: 7rem;
+    }
+
+    footer, section{
+        padding: 1rem;
+    }
+
+    footer{
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    footer, footer div:first-child{
+        gap: 3rem;
+    }
+
+    footer div:last-child{
+        gap: 2rem;
+    }
+
+    .btn-cnt, .sct1-img-cnt, .sct4, footer, footer div:first-child{
+        flex-direction: column;
+    }
+
+    .sct1{
+        padding: 1rem;
+    }
+
+    .sct1 img, .sct2 img{
+        width: 100%;
+    }
+
+    .sct1-img-cnt-text, ul{
+        text-align: center;
+    }
+
+    .sct3-cnt1{
+        flex-direction: column;
+    }
+
+    .sct3-cnt1 div:not(.sct3-cnt1 div:last-child) {
+        margin-right: 0;
+    }
+
+    .sct4{
+        align-items: center;
+    }
+
+    .sct4 img{
+        max-inline-size: 100%;
+    }
+
+    .text-centered{
+        max-width: 80% !important;
+    }
+
+    .btn-cnt{
+        min-width: 70%;
+    }
+
+    ul{
+        column-count: unset;
+    }
+
+    li:not(:last-of-type){
+        margin-bottom: 2rem;
+    }
+}
