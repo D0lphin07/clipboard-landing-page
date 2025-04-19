@@ -30,6 +30,10 @@ button{
 
 }
 
+button, li, footer div:last-child{
+    cursor: pointer;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -48,14 +52,16 @@ footer > div:first-child img{
 
 footer div:last-child{
     display: flex;
+    align-items: center;
     gap: 1.4rem;
 }
 
-footer img{
-    object-fit: contain;
+footer div:last-child svg:hover{
+    color: var(--btn-color1);
 }
 
-footer div:last-child img{
+
+footer div:last-child svg{
     width: 25px;
 }
 
@@ -195,6 +201,7 @@ ul{
 
 .sct4 img{
     max-inline-size: 20%;
+    object-fit: contain;
 }
 
 .text-centered{
